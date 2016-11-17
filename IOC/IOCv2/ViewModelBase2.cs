@@ -19,12 +19,18 @@ namespace IOC.IOCv2
 
         public void AddChild(IViewModel2 childViewModel)
         {
-            Children.Add(childViewModel);
+            if (childViewModel != null)
+                Children.Add(childViewModel);
+            else
+                throw new NullReferenceException();
         }
 
         public void SetParent(IViewModel2 parentViewModel)
         {
-            Parent = parentViewModel;
-        }
+            if (parentViewModel != null)
+                Parent = parentViewModel;
+            else
+                throw new NullReferenceException();
+        }   
     }
 }
