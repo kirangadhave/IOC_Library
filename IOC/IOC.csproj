@@ -48,8 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOCv2\IView2.cs" />
+    <Compile Include="IOCv2\IViewModel2.cs" />
+    <Compile Include="IOCv2\IWindow2.cs" />
+    <Compile Include="IOCv2\IWindowViewModel2.cs" />
+    <Compile Include="IOCv2\ViewModelBase2.cs" />
+    <Compile Include="IOCv2\WindowViewModelBase2.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="IViewModel.cs" />
+    <Compile Include="IViewModelBase.cs" />
     <Compile Include="IWindow.cs" />
     <Compile Include="IWindowViewModel.cs" />
     <Compile Include="MvvmHelperClass.cs" />
@@ -61,6 +68,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

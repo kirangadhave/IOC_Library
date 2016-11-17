@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IOC
 {
-    public interface IWindowViewModel
+    public interface IWindowViewModel : IViewModelBase
     {
         IWindow Window { get; set; }
     }
