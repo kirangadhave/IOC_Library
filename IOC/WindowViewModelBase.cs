@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace IOC
 {
+    [Serializable]
     public class WindowViewModelBase:Notifier,IWindowViewModel
     {
         public IView View { get; set; }

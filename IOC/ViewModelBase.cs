@@ -6,6 +6,7 @@ using System.Text;
 
 namespace IOC
 {
+    [Serializable]
     public class ViewModelBase : Notifier, IViewModel
     {
         public IContainer Container { get; set; }
