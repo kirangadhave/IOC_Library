@@ -18,14 +18,7 @@ namespace IOC
 
         public static T GetChildByType<T>(this IViewModel2 vm) where T:IViewModel2
         {
-            var v = default(T);
-            vm.Children.ForEach(x => {
-                if (x.GetType() == typeof(T))
-                {
-                    v = (T)x;
-                }
-            });
-            return v;
+            return (T)vm.Children.FirstOrDefault(x => x.GetType() == typeof(T));
         }
 
     }
