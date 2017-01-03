@@ -13,6 +13,7 @@ namespace IOC.IOCv2
 
         void SetParent(IViewModel2 parentViewModel);
         void AddChild(IViewModel2 childViewModel);
+        IViewModel2 GetChild<T>() where T : IViewModel2;
         event EventHandler Initialized;
     }
 }
