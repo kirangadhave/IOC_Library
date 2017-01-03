@@ -11,8 +11,6 @@ namespace IOC.IOCv2
     [Serializable]
     public class ViewModelBase2 : ViewModelBase, IViewModel2
     {
-        public event EventHandler Initialized;
-
         public IViewModel2 Parent { get; private set; }
 
         public ObservableCollection<IViewModel2> Children { get; private set; }
